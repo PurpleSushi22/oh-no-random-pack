@@ -2,7 +2,7 @@ name: depirativeohno
 subtitle: Such craziness
 displayName: Oh no & Negative Tails
 author: PurpleSushi22
-version: 69
+version: 0.7 (v6)
 description: 
 '''
 uhh basically oh no language edition
@@ -11,4 +11,4 @@ yeah that's it
 credit to the folks at SMOLKEYS/bundles for the identifiers on how to edit stuff like basically everything in the first build
 '''
 hidden: true
-minGameVersion: 135
+minGameVersion: 126
