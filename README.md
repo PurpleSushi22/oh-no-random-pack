@@ -1,4 +1,3 @@
 # oh no and Shadow Tails
 This belonged to knuckles how dare you!!!!
-
-This version of the bundle is updated every minor release.
+Switched main versions. v6 is **still** being updated.
