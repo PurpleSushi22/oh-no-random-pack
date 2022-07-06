@@ -17,13 +17,13 @@ Events.on(EventType.ClientLoadEvent, event => {
 if (Core.settings.getString("locale") != "ohno") return;
 
 // translate meta
-var meta = Vars.mods.locateMod("ohno").meta;
+var meta = Vars.mods.locateMod("oh-no-lang").meta;
 meta.author = "[purple]pUrpel[accent]SushI[royal]22";
 meta.displayName = "oj no and NegativE Tials";
 meta.description = "oH GOd WHat AHhaVe YoUD ONe"
 
 // create a new bundle
-var file = Vars.mods.locateMod("ohno").root.child("bundles").child("bundle_ohno.properties");
+var file = Vars.mods.locateMod("oh-no-lang").root.child("bundles").child("bundle_ohno.properties");
 PropertiesUtils.load(Core.bundle.getProperties(), file.reader());
 Vars.content.each(update); // update localized strings
 
