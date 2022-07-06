@@ -12,10 +12,6 @@ Events.on(EventType.ClientLoadEvent, event => {
 		t.setChecked(Core.settings.getString("locale") == "ohno");
 	}).size(400, 50).row();
 });
-
-// why download a mod if you play in another language?
-if (Core.settings.getString("locale") != "ohno") return;
-
 // translate meta
 var meta = Vars.mods.locateMod("depirativeohno").meta;
 meta.author = "[purple]pUrpel[accent]SushI[royal]22";
@@ -30,7 +26,6 @@ Vars.content.each(update); // update localized strings
 function update(item) {
 	// idk why but on mobile the item can be null
 	if (item instanceof UnlockableContent == false) return;
-
 	var type = item.getContentType() + "." + item.name;
 	item.localizedName = Core.bundle.get(type + ".name", item.name);
 	item.description = Core.bundle.getOrNull(type + ".description");
