@@ -1,5 +1,5 @@
 Events.on(EventType.ClientLoadEvent, event => {
-	var button = new TextButton(" funny ", Styles.clearTogglet);
+	var button = new TextButton(" funny ", Styles.clearToggle);
 	button.clicked(() => {
 		if (Core.settings.getString("locale") == "ohno") return;
 		Core.settings.put("locale", "ohno");
